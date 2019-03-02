@@ -1,0 +1,26 @@
+#practice {
+    overflow: hidden;
+
+    & p {
+        float: left;
+        margin-right: 20px;
+    }
+
+    & li {
+        padding: 20px 0px;
+    }
+}
+
+#date {
+    font-weight: bold;
+}
+
+#description {
+    padding-top: 8px;
+}
+
+#location {
+    font-size: 10pt;
+    padding-top: 8px;
+    margin-left: 20px;
+}

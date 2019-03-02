@@ -27,11 +27,11 @@ import { FwContainerQualificationComponent } from './qualification/qualification
   ],
   providers: [],
   exports: [
-    FwBodyComponent,
-    FwContainerHeaderComponent,
-    FwContainerContactComponent,
-    FwContainerPracticeComponent,
-    FwContainerQualificationComponent
+      FwBodyComponent,
+      FwContainerHeaderComponent,
+      FwContainerContactComponent,
+      FwContainerPracticeComponent,
+      FwContainerQualificationComponent
   ]
 })
 export class NgxCvModule { }

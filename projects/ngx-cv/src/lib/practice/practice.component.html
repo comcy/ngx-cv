@@ -1,0 +1,10 @@
+<div id="practice">
+    <h2>{{ title }}</h2>
+    <ng-container *ngFor="let item of practiceList">
+        <ul>
+            <li>
+                <p id="date">{{ item.date }}</p> <p id="description">{{ item.description }}</p> <p id="location">{{ item.location }}</p>
+            </li>
+        </ul>
+    </ng-container>
+</div>

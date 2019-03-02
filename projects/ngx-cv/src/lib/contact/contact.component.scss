@@ -1,0 +1,16 @@
+#contact {
+    overflow: hidden;
+
+    & p {
+        float: left;
+    }
+
+    & i {
+        margin-right: 20px;
+        float: left;
+    }
+
+    & li {
+        padding: 10px 0px;
+    }
+}
