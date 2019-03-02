@@ -12,6 +12,7 @@ import { FwContainerQualificationComponent } from './qualification/qualification
 
 
 @NgModule({
+  providers: [],
   declarations: [
     FwBodyComponent,
     FwContainerHeaderComponent,
@@ -25,7 +26,6 @@ import { FwContainerQualificationComponent } from './qualification/qualification
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
   exports: [
     FwBodyComponent,
     FwContainerHeaderComponent,

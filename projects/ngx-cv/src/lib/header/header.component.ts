@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { HeaderConfigApi } from 'fw/header/headerconfig-api';
+import { HeaderConfigApi } from './headerconfig-api';
 
 @Component({
   selector: 'fw-container-header',
@@ -9,9 +8,9 @@ import { HeaderConfigApi } from 'fw/header/headerconfig-api';
 })
 export class FwContainerHeaderComponent implements OnInit {
 
-  private name: string;
-  private greeting: string;
-  private picture: string;
+  name: string;
+  greeting: string;
+  picture: string;
 
   constructor(private headerConfigApi: HeaderConfigApi) { }
 

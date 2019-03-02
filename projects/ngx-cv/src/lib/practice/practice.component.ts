@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { PracticeConfigApi, PracticeElement } from 'fw/practice/practiceconfig-api';
+import { PracticeConfigApi, PracticeElement } from './practiceconfig-api';
 
 @Component({
   selector: 'fw-container-practice',
@@ -9,8 +8,8 @@ import { PracticeConfigApi, PracticeElement } from 'fw/practice/practiceconfig-a
 })
 export class FwContainerPracticeComponent implements OnInit {
 
-  private title: string;
-  private practiceList: Array<PracticeElement>;
+  title: string;
+  practiceList: Array<PracticeElement>;
 
   constructor(private practiceConfigApi: PracticeConfigApi) { }
 

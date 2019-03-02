@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ContactConfigApi, ContactElement } from 'fw/contact/contactconfig-api';
+import { ContactConfigApi, ContactElement } from './contactconfig-api';
 
 @Component({
   selector: 'fw-container-contact',
@@ -9,8 +8,8 @@ import { ContactConfigApi, ContactElement } from 'fw/contact/contactconfig-api';
 })
 export class FwContainerContactComponent implements OnInit {
 
-  private title: string;
-  private contactList: Array<ContactElement>;
+  title: string;
+  contactList: Array<ContactElement>;
 
   constructor(private contactConfigApi: ContactConfigApi) { }
 

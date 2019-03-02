@@ -1,10 +1,5 @@
-import { Observable } from 'rxjs/Observable';
-
-export class QualificationElement {
-    date: string;
-    description: string;
-    location: string | null;
-}
+import { Observable } from 'rxjs';
+import { QualificationElement } from './qualification-element';
 
 export abstract class QualificationConfigApi {
 
