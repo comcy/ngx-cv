@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactConfigApi, ContactElement } from './contactconfig-api';
+import { ContactConfigApi, ContactElement } from './shared';
 
 @Component({
   selector: 'fw-container-contact',

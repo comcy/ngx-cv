@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderConfigApi } from './headerconfig-api';
+import { HeaderConfigApi } from './shared/header-config.api';
 
 @Component({
   selector: 'fw-container-header',

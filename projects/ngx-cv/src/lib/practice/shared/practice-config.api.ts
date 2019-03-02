@@ -1,10 +1,5 @@
 import { Observable } from 'rxjs';
-
-export class PracticeElement {
-    date: string;
-    description: string;
-    location: string;
-}
+import { PracticeElement } from './practice-element';
 
 export abstract class PracticeConfigApi {
 

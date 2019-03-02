@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { QualificationConfigApi } from './qualificationconfig-api';
-import { QualificationElement } from './qualification-element';
+import { QualificationConfigApi } from './shared/qualification-config.api';
+import { QualificationElement } from './shared/qualification-element';
 
 @Component({
   selector: 'fw-container-qualification',

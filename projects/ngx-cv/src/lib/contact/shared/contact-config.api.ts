@@ -1,9 +1,5 @@
 import { Observable } from 'rxjs';
-
-export class ContactElement {
-    icon: string;
-    contactText: string;
-}
+import { ContactElement } from './contact-element';
 
 export abstract class ContactConfigApi {
 

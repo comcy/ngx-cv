@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PracticeConfigApi, PracticeElement } from './practiceconfig-api';
+import { PracticeConfigApi, PracticeElement } from './shared';
 
 @Component({
   selector: 'fw-container-practice',
