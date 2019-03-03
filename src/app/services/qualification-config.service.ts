@@ -5,7 +5,7 @@ import { QualificationElement, QualificationConfigApi, ContactElement } from 'ng
 
 
 // Set title.
-let title: string = "TEST";
+let title: string = "Qualification";
 
 // Set contact info attributes as list.
 let qualificationList: Array<QualificationElement> = [

@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ContactConfigApi, ContactElement } from './shared';
 
 @Component({
-  selector: 'fw-container-contact',
+  selector: 'cv-container-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class FwContainerContactComponent implements OnInit {
+export class CvContainerContactComponent implements OnInit {
 
   title: string;
   contactList: Array<ContactElement>;

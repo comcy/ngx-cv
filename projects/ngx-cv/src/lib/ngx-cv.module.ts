@@ -4,21 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
-import { FwBodyComponent } from './body/body.component';
-import { FwContainerHeaderComponent } from './header/header.component';
-import { FwContainerContactComponent } from './contact/contact.component';
-import { FwContainerPracticeComponent } from './practice/practice.component';
-import { FwContainerQualificationComponent } from './qualification/qualification.component';
+import { CvBodyComponent } from './body/body.component';
+import { CvContainerHeaderComponent } from './header/header.component';
+import { CvContainerContactComponent } from './contact/contact.component';
+import { CvContainerPracticeComponent } from './practice/practice.component';
+import { CvContainerQualificationComponent } from './qualification/qualification.component';
 
 
 @NgModule({
   providers: [],
   declarations: [
-    FwBodyComponent,
-    FwContainerHeaderComponent,
-    FwContainerContactComponent,
-    FwContainerPracticeComponent,
-    FwContainerQualificationComponent
+    CvBodyComponent,
+    CvContainerHeaderComponent,
+    CvContainerContactComponent,
+    CvContainerPracticeComponent,
+    CvContainerQualificationComponent
   ],
   imports: [
     CommonModule,
@@ -27,11 +27,11 @@ import { FwContainerQualificationComponent } from './qualification/qualification
     HttpClientModule
   ],
   exports: [
-    FwBodyComponent,
-    FwContainerHeaderComponent,
-    FwContainerContactComponent,
-    FwContainerPracticeComponent,
-    FwContainerQualificationComponent
+    CvBodyComponent,
+    CvContainerHeaderComponent,
+    CvContainerContactComponent,
+    CvContainerPracticeComponent,
+    CvContainerQualificationComponent
   ]
 })
 export class NgxCvModule { }

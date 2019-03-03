@@ -1,6 +1,7 @@
 <div id="header">
 
-    <img class="portfolio" src="/assets/{{ picture }}" alt="picture of me">
+    <img *ngIf="picture !== ''" class="portfolio" src="/assets/{{ picture }}" alt="profile image">
+    <img *ngIf="picture === ''" class="portfolio" src="assets/{{ picture }}" alt="profile image">
     <h1> {{ name }} </h1>
 
     <p>{{ greeting }}</p>

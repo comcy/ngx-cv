@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { PracticeConfigApi, PracticeElement } from './shared';
 
 @Component({
-  selector: 'fw-container-practice',
+  selector: 'cv-container-practice',
   templateUrl: './practice.component.html',
-  styleUrls: ['./practice.component.scss']
+  styleUrls: ['./practice.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class FwContainerPracticeComponent implements OnInit {
+export class CvContainerPracticeComponent implements OnInit {
 
   title: string;
   practiceList: Array<PracticeElement>;

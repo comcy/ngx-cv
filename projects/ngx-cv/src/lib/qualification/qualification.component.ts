@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { QualificationConfigApi } from './shared/qualification-config.api';
 import { QualificationElement } from './shared/qualification-element';
 
 @Component({
-  selector: 'fw-container-qualification',
+  selector: 'cv-container-qualification',
   templateUrl: './qualification.component.html',
-  styleUrls: ['./qualification.component.scss']
+  styleUrls: ['./qualification.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class FwContainerQualificationComponent implements OnInit {
+export class CvContainerQualificationComponent implements OnInit {
 
   title: string;
   qualificationList: Array<QualificationElement>;

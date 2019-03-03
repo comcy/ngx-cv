@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { Observable, of } from 'rxjs';
 import { ContactConfigApi, ContactElement } from 'ngx-cv';
 

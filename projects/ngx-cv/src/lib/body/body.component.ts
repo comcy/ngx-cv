@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'fw-body',
+  selector: 'cv-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss']
+  styleUrls: ['./body.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class FwBodyComponent implements OnInit {
+export class CvBodyComponent implements OnInit {
 
   constructor() { }
 

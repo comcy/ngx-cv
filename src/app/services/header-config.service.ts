@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-
 import { Observable, of } from 'rxjs';
 import { HeaderConfigApi, ContactElement } from 'ngx-cv';
 
-let name: string = 'Christian Silfang';
-let picture: string = 'no_avatar.jpg';
-let greeting: string = 'Hallo!';
+let name: string = 'Max Mustermann';
+let picture: string = ''; // default image
+let greeting: string = 'Hello my name is Max! I am a great guy!';
+
 
 @Injectable()
 export class HeaderConfigService implements HeaderConfigApi {
