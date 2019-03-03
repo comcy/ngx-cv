@@ -9,31 +9,25 @@ import { ContactConfigApi, ContactElement } from './shared';
 })
 export class CvContainerContactComponent implements OnInit {
 
-  title: string;
-  contactList: Array<ContactElement>;
+  title: string = '';
+  contactList: ContactElement[] = [];
 
   constructor(private contactConfigApi: ContactConfigApi) { }
 
   ngOnInit() {
     this.contactConfigApi.getTitle().subscribe(val => this.title = val);
 
-    // this.contactConfigApi.getContactlist().subscribe(val => this.contactList = val);
-
     this.contactConfigApi.getContactlist().subscribe(val => {
 
       val.forEach(item => {
 
-        console.log('item:::', item);
-
-        this.contactList.push({
-          icon: item.icon,
-          iconClass: item.iconClass ? item.iconClass : item.iconClass = 'material-icons md-12',
-          contactText: item.contactText
-        });
+        this.contactList.push(
+          {
+            icon: item.icon,
+            iconClass: item.iconClass ? item.iconClass : item.iconClass = 'material-icons md-12',
+            contactText: item.contactText
+          });
       });
-      
-      console.log('list:::', this.contactList)
-
     });
   }
 }
