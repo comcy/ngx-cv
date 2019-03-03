@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 import { CvBodyComponent } from './body/body.component';
 import { CvContainerHeaderComponent } from './header/header.component';
@@ -24,7 +25,8 @@ import { CvContainerQualificationComponent } from './qualification/qualification
     CommonModule,
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   exports: [
     CvBodyComponent,

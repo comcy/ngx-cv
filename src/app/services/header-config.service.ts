@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HeaderConfigApi, ContactElement } from 'ngx-cv';
 
 let name: string = 'Max Mustermann';
-let picture: string = ''; // default image
+let picture: string = '/assets/no_avatar.jpg'; // default image
 let greeting: string = 'Hello my name is Max! I am a great guy!';
 
 

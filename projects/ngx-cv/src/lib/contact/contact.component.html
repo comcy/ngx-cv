@@ -1,10 +1,12 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <div id="contact">
     <h2>{{ title }}</h2>
 
     <ng-container *ngFor="let item of contactList">
         <ul>
             <li>
-                <i class="material-icons md-12">{{ item.icon }}</i>
+                <i class="{{ item.iconClass }}">{{ item.icon }}</i>
                 <p>{{ item.contactText }}</p>
             </li>
         </ul>

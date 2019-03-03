@@ -15,10 +15,25 @@ export class CvContainerContactComponent implements OnInit {
   constructor(private contactConfigApi: ContactConfigApi) { }
 
   ngOnInit() {
-    // Get configurated title.
     this.contactConfigApi.getTitle().subscribe(val => this.title = val);
-    
-    // Get defined contact elements.
-    this.contactConfigApi.getContactlist().subscribe(val => this.contactList = val);
+
+    // this.contactConfigApi.getContactlist().subscribe(val => this.contactList = val);
+
+    this.contactConfigApi.getContactlist().subscribe(val => {
+
+      val.forEach(item => {
+
+        console.log('item:::', item);
+
+        this.contactList.push({
+          icon: item.icon,
+          iconClass: item.iconClass ? item.iconClass : item.iconClass = 'material-icons md-12',
+          contactText: item.contactText
+        });
+      });
+      
+      console.log('list:::', this.contactList)
+
+    });
   }
 }

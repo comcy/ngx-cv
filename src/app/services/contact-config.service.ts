@@ -10,11 +10,13 @@ let title: string = 'Kontakt';
 let contactList: Array<ContactElement> = [
     {
         icon: 'call',
+        iconClass: 'material-icons md-12',
         contactText: '(+49) 000 1111 22222'
     },
     {
         icon: 'mail',
-        contactText: 'max@mustermann.de'
+        iconClass: '',
+        contactText: 'max@mustermann.com'
     }
 ];
 
